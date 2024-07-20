@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('path/to/your/image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #0056D2;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-option label,
+.alternative-login p {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-option input,
+.alternative-login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-option button,
+.alternative-login button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056D2;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-option button:hover,
+.alternative-login button:hover {
+    background-color: #0044A3;
+}
+
+.alternative-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.alternative-login p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.alternative-login a {
+    color: #0056D2;
+    text-decoration: none;
+}
+
+.alternative-login a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Box */
+.signup-box {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #0056D2;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0056D2;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.signup-box:hover {
+    background-color: #0056D2;
+    color: #fff;
+}
+
+/* Home Link */
+.home-link {
+    display: block;
+    margin-top: 20px;
+    color: #0056D2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Optional: Add a class to control the visibility of the error message */
+.error-message.show {
+    display: block;
+}

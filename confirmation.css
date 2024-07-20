@@ -1,0 +1,103 @@
+/* confirmation.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.confirmation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.confirmation h2 {
+    color: #0073e6;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 280px;
+    width: 100%; /* Ensures full width within parent */
+    text-align: center;
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.video-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 10px;
+}
+
+.video-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.video-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.video-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.video-link:hover {
+    background-color: #005bb5;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    background-color: #005bb5;
+}

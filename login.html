@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="loginedit.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Learn.AI</h1>
+    </header>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Log In</h1>
+            <form id="login-form" action="submit_login.php" method="post">
+                <!-- Username and password login -->
+                <div class="login-option">
+                    <label for="username">Username or Email:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username or Email id" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+                    <button type="submit">Log In</button>
+                </div>
+                <p id="error-message" class="error-message"></p> <!-- Error message -->
+            </form>
+
+            <!-- Message about Google and Sign Up -->
+            <div class="alternative-login">
+                <p>Don't have an account?</p>
+                <a href="email_login.html" class="signup-box">Sign Up</a>
+                <a href="index.html" class="home-link">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
