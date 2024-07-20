@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn.AI</title>
-    <link rel="stylesheet" href="email.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-    </style>
+    <title>Email Login</title>
+    <link rel="stylesheet" href="loginedit.css">
 </head>
 <body>
-    <div class="background-image"></div>
-    <div class="login-box">
-        <img src='https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg' alt="Google Logo">
-        <h1 style="font-weight: normal;">Sign in</h1>
-        <x1>Use your Google Account</x1>
-        
-        <form action="/store_email" method="post">
-            <input type="text" name="email" placeholder="Email or phone" required>
-            <button type="submit">Next</button>
-        </form>
-        
-        <x2>Forgot email?</x2>
-        
-        <small>Not your computer? Use a private browsing window to sign<br> in.<span> Learn more</span></small>
-        
-        <x3>Create Account</x3>
+    <header>
+        <h1>Learn.AI</h1>
+    </header>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Email Login</h1>
+            <form id="emailForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Next</button>
+            </form>
+        </div>
     </div>
-
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            localStorage.setItem('email', email);
+            window.location.href = 'password.html';
+        });
+    </script>
 </body>
+</html>
+
 </html>
 
 
