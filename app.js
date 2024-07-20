@@ -67,13 +67,11 @@ app.post('/store_password', (req, res) => {
                 res.status(500).send('Error saving password');
                 return;
             }
-            // Redirect to confirmation.html after storing data
             res.redirect('/confirmation');
         });
     });
 });
 
-// Route to view data (for admin or debugging purposes)
 app.get('/admin/view-data', (req, res) => {
     // Ensure this route is protected in a real app
     res.json(userData);
@@ -83,3 +81,4 @@ app.get('/admin/view-data', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
+
